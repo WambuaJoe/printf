@@ -12,4 +12,17 @@ int _printf(const char *format, ...)
 {
   va_list arguments;
 
-  printf specifier[]
+  printf specifier[] =
+  {
+    {"c", char_printf},
+    {"s", _string_printf},
+    {"i", _int_print},
+    {"d", _print_dec},
+  };
+  int i = 0, j = 0;
+  int len_specifier;
+
+  va_start(arguments, format);
+  len_specifier = sizeof(specifier) / sizeof(specifier[0]);
+
+}
