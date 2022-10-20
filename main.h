@@ -9,5 +9,6 @@
 int _string_printf(va_list arguments);
 int char_printf(va_list arguments);
 int _putchar(char c);
+int _int_print(va_list arguments);
 
 #endif
