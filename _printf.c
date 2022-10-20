@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * _printf - function that produces output according to a 
+ *_printf - function that produces output according to a 
  *           specified format
  * @format: character string composed of zero, or more, directives
  *
@@ -11,14 +11,13 @@
 int _printf(const char *format, ...)
 {
   va_list arguments;
-
   printf specifier[] =
-  {
-    {"c", char_printf},
-    {"s", _string_printf},
-    {"i", _int_print},
-    {"d", _print_dec},
-  };
+    {
+     {"c", char_printf},
+     {"s", _string_printf},
+     {"i", _int_print},
+     {"d", _print_dec},
+    };
   int i = 0, j = 0;
   int len_specifier;
 
