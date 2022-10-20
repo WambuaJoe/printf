@@ -10,4 +10,5 @@ The following is a list of functions and macros that are allowed for the project
 - va_list
 
 For compilation, the code within this repository is to be compiled using the following flags:
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+
+- gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
