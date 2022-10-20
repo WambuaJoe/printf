@@ -8,3 +8,6 @@
  * Return: returns the length of the output
  */
 
+int _printf(const char *format, ...)
+{
+  va_list arguments;
