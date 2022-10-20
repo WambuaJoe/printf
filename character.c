@@ -9,10 +9,11 @@
 
 int char_printf(va_list arguments)
 {
-  char c;
-
-  c = va_arg(arguments, int);
-  
-  (_putchar(c));
-  return (1);
+	char c;
+	
+	c = va_arg(arguments, int);
+	
+	(_putchar(c));
+	
+	return (1);
 }
