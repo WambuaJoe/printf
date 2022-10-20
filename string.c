@@ -1,19 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *main - print string using putchar
- *stringptr: - pointer to string
- *string_printf: - print string
+ *_string_printf - function that prints string
+ *@arguments: list of arguments passed
  *Return: string length
  */
-int _string_printf(char *stringptr)
+int _string_printf(va_list arguments)
 {
+	char *strptr;
 	int i = 0;
 
-	while (stringptr[i] != '\n' && stringptr[i] != '\0')
+	strptr = va_arg(arguments, char *);
+
+	while (strptr[i] != '\n' && strptr[i] != '\0')
 	{
-		putchar(stringptr[i]);
+		putchar(strptr[i]);
 		i++;
 	}
 	return (i);
