@@ -17,5 +17,6 @@ int _string_printf(va_list arguments)
 		_putchar(strptr[i]);
 		i++;
 	}
+	
 	return (i);
 }
