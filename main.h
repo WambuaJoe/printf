@@ -9,7 +9,8 @@
 typedef struct printer
 {
 	char *symbol;
-	int (*print)(va_list arguments);
+	int (*print)(va_list arguments)
+}printf;
 
 int _string_printf(va_list arguments);
 int char_printf(va_list arguments);
