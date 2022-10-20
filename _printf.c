@@ -11,3 +11,5 @@
 int _printf(const char *format, ...)
 {
   va_list arguments;
+
+  printf specifier[]
