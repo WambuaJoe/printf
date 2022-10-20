@@ -38,6 +38,5 @@ int _int_print(va_list arguments)
 		count /= 10;
 		k++;
 	}
-	
 	return (k);
 }
