@@ -6,10 +6,10 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-typedef struct _print {
-    char *symbol;
-    int (*_printf)(va_list arguments);
-} print;
+typedef struct printer
+{
+	char *symbol;
+	int (*print)(va_list arguments);
 
 int _string_printf(va_list arguments);
 int char_printf(va_list arguments);
