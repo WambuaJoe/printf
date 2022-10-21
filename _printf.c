@@ -48,10 +48,7 @@ void number_to_string(uint64_t number, int base, char *buffer)
 	unsigned_number_to_string(number, base, buffer);
 }
 
-// @state: kind of like return value
-// 0: regular
-// 1: escape
-void _vprintf(const char *format, va_list arguments)
+void vprintf(const char *format, va_list arguments)
 {
 	int state = 0;
 
@@ -124,10 +121,7 @@ void _vprintf(const char *format, va_list arguments)
 	}
 }
 
-// the function that we are implementing is _printf
-// @format: the string to be formatted
-// @arguments: object (struct) containing the arguments to be handled
-// _vprintf: the function that implements each argument
+
 void _printf(const char *format, ...)
 {
 

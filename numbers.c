@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _int_print - prints an integer
+ * _int_print - this function prints an integer
  * @arguments: list of arguments pointing to integer
  *
  * Return: length of integer
@@ -17,7 +17,7 @@ int _int_print(va_list arguments)
 
 	if (a < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		i = a * -1;
 		k++;
 	}
@@ -34,7 +34,7 @@ int _int_print(va_list arguments)
 
 	while (count >= 1)
 	{
-		putchar(((i / count) % 10) + '0');
+		_putchar(((i / count) % 10) + '0');
 		count /= 10;
 		k++;
 	}

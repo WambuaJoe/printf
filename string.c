@@ -14,7 +14,7 @@ int _string_printf(va_list arguments)
 
 	while (strptr[i] != '\n' && strptr[i] != '\0')
 	{
-		putchar(strptr[i]);
+		_putchar(strptr[i]);
 		i++;
 	}
 	return (i);
