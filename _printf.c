@@ -11,7 +11,8 @@
 int _printf(const char *format, ...)
 {
 	va_list arguments;
-	printf specifier[] = {
+
+	_prints specifier[] = {
 		{"c", char_printf},
 		{"s", _string_printf},
 		{"i", _int_print},
