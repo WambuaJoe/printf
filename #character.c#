@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ * char_printf - print one character
+ * @arguments: variadic function
+ * Return: size
+ */
+
+int char_printf(va_list arguments)
+{
+	char c;
+
+	c = va_arg(arguments, int);
+
+	(_putchar(c));
+	return (1);
+}
