@@ -19,9 +19,9 @@ int _printf(const char *format, ...)
 		{"d", _print_dec},
 	};
 	int i = 0, j = 0;
-	int len_specifier;
+	int len_Spec;
 
 	va_start(arguments, format);
 
-	len_specifier = sizeof(specifier) / sizeof(specifier[0]);
+	len_Spec = sizeof(specifier) / sizeof(specifier[0]);
 }
