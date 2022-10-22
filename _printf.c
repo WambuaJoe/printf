@@ -12,7 +12,8 @@ void unsigned_number_to_string(uint64_t number, int base, char *buffer)
 
 	/*base*/
 	char buf[65];
-    for(int i = 0; i < 17; i++)
+    int i;
+    for(i = 0; i < 17; i++)
 		buf[i] = 0;
 
 	int cur = 0;
@@ -32,7 +33,7 @@ void unsigned_number_to_string(uint64_t number, int base, char *buffer)
 		number /= base;
 	}
 
-	for (int i = cur - 1; i != 0; i--)
+	for (i = cur - 1; i != 0; i--)
 		*buffer++ = buf[i];
 	*buffer++ = buf[0];
 	*buffer = 0;
@@ -88,10 +89,10 @@ void vprintf(const char *format, va_list arguments)
 			case 'd':
 			{
 				int n = va_arg(arguments, int);
-
+                int i;
 				char buf[32];
 				number_to_string(n, 10, buf);
-				for (int i = 0; buf[i]; i++)
+				for (i = 0; buf[i]; i++)
 				{
 					_putchar(buf[i]);
 				}
@@ -101,9 +102,10 @@ void vprintf(const char *format, va_list arguments)
 			{
 				int n = va_arg(arguments, int);
 
+                int i;
 				char buf[32];
 				number_to_string(n, 16, buf);
-				for (int i = 0; buf[i]; i++)
+                for (i = 0; buf[i]; i++)
 				{
 					_putchar(buf[i]);
 				}
