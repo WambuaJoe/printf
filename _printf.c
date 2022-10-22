@@ -12,7 +12,8 @@ void unsigned_number_to_string(uint64_t number, int base, char *buffer)
 
 	/*base*/
 	char buf[65];
-	for (int i = 0; i < 17; i++)
+    int i;
+	for(int i = 0; i < 17; i++)
 		buf[i] = 0;
 
 	int cur = 0;
