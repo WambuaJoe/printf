@@ -15,11 +15,10 @@ void unsigned_number_to_string(uint64_t number, int base, char *buffer)
     int i;
     for(i = 0; i < 17; i++)
 		buf[i] = 0;
-
-	int cur = 0;
-
-	while (number)
-	{
+    
+	{int cur = 0;
+    while (number)
+    {
 		int digit = number % base;
 		if (digit >= 10)
 		{
@@ -32,11 +31,13 @@ void unsigned_number_to_string(uint64_t number, int base, char *buffer)
 
 		number /= base;
 	}
-
+    }
+    {int i;
 	for (i = cur - 1; i != 0; i--)
 		*buffer++ = buf[i];
 	*buffer++ = buf[0];
 	*buffer = 0;
+    }
 }
 
 void number_to_string(uint64_t number, int base, char *buffer)
