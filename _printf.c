@@ -49,7 +49,7 @@ void number_to_string(uint64_t number, int base, char *buffer)
 	unsigned_number_to_string(number, base, buffer);
 }
 
-void vprintf(const char *format, va_list arguments)
+void _vprintf(const char *format, va_list arguments)
 {
 	int state = 0;
 
